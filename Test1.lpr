@@ -26,21 +26,17 @@ begin
 
 end;
 
-Procedure CheckGuess();//GeorgeDancy
+Procedure CheckGuess();
 begin
 
 end;
 
-Procedure GetUserInput();//Ryan
-begin
-end;
-
-Procedure VerifyInput();//Harry
+Procedure VerifyInput();
 begin
 
 end;
 
-Procedure ShowColour();//Jacob
+Procedure ShowColour();
 begin
 
 end;
@@ -61,7 +57,7 @@ begin
 end;
 
 Procedure WriteRed();
-var y,x:integer;
+var a,y,x:integer;
 begin
   TextBackground(LightRed);
   x:=41;
@@ -69,14 +65,14 @@ begin
   while y < 26 do
   begin
     gotoxy(x,y);
-    for x:=41 to 80 do
+    for a:=41 to 80 do
         write(' ');
         y+=1;
   end;
 end;
 
 Procedure WriteBlue();
-var y,x:integer;
+var a,y,x:integer;
 begin
   TextBackground(LightBlue);
   x:=1;
@@ -84,14 +80,14 @@ begin
   while y < 51 do
   begin
     gotoxy(x,y);
-    for x:=1 to 40 do
+    for a:=1 to 40 do
         write(' ');
         y+=1;
   end;
 end;
 
 Procedure WriteYellow();
-var y,x:integer;
+var a,y,x:integer;
 begin
   TextBackground(Yellow);
   x:=41;
@@ -99,13 +95,13 @@ begin
   while y < 51 do
   begin
     gotoxy(x,y);
-    for x:=41 to 80 do
+    for a:=41 to 80 do
         write(' ');
         y+=1;
   end;
   gotoxy(1,51);
   TextBackground(Black);
-  for x:= 1 to 81 do
+  for a:= 1 to 81 do
     write(' ');
 
 end;
