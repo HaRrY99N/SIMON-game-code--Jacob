@@ -26,17 +26,21 @@ begin
 
 end;
 
-Procedure CheckGuess();
+Procedure CheckGuess();//GeorgeDancy
 begin
 
 end;
 
-Procedure VerifyInput();
+Procedure GetUserInput();//Ryan
+begin
+end;
+
+Procedure VerifyInput();//Harry
 begin
 
 end;
 
-Procedure ShowColour();
+Procedure ShowColour();//Jacob
 begin
 
 end;
