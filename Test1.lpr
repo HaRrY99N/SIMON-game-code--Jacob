@@ -3,6 +3,7 @@ uses Crt;
 type
   Number = array [0..50] of string;
 var RandomSequence:Number;
+    level:integer;
 
 Procedure GenerateSequence();
 var NextColour,a:integer;
@@ -41,7 +42,26 @@ begin
 end;
 
 Procedure ShowColour();//Jacob
+var x:integer;
 begin
+x:=1000;
+for a:= 1 to 50 do
+begin  
+  if RandomSequence[a] = 'R' then
+    WriteRed();
+    Delay(x);
+  if RandomSequence[a] = 'B' then
+    WriteBlue();
+    Delay(x);
+  if RandomSequence[a] = 'G' then
+    WriteGreen();
+    Delay(x);
+  if RandomSequence[a] = 'Y' then
+    WriteYellow();
+    Delay(x);
+x-=10;
+end;
+
 
 end;
 
@@ -121,8 +141,6 @@ gotoxy(27,50);
 TextColor(White);
 write('Welcome to the SIMON game!');
 
-for a:=1 to 50 do
-    write(RandomSequence[a]);
 readln();
 end.
 
