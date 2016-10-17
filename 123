@@ -34,11 +34,22 @@ end;
 
 Procedure GetUserInput();//Ryan
 begin
+writeln('what is the sequence');  
+readln(user);   
+writeln;   
+writeln;   
+write('the sequence was ', nextcolour); 
 end;
 
 Procedure VerifyInput();//Harry
 begin
-
+if (nextcolour = user) then       
+  writeln('congratu;ations you over onto the next level');       
+  level := level + 1; 
+end
+else
+begin
+writeln('you got it wrong please start again');
 end;
 
 Procedure ShowColour();//Jacob
@@ -95,7 +106,7 @@ begin
   end;
 end;
 
-Procedure WriteBlue();
+procedure writeBlue();
 var y,x:integer;
 begin
   TextBackground(LightBlue);
@@ -140,6 +151,7 @@ GenerateSequence();
 gotoxy(27,50);
 TextColor(White);
 write('Welcome to the SIMON game!');
+
 
 readln();
 end.
